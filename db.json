@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Hello2",
+      "author": "typicode2"
+    },
+    {
+      "id": 3,
+      "title": "Hello3",
+      "author": "Typicode3"
+    },
+    {
+      "id": 4,
+      "title": "Hello4",
+      "author": "typicode4"
+    },
+    {
+      "id": 5,
+      "title": "Hello5",
+      "author": "typicode5"
+    }
+  ]
+}

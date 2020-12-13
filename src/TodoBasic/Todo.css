@@ -1,0 +1,21 @@
+.Todo {
+    text-align: center;
+}
+button{
+    margin-left: 40px;
+}
+
+.delete{
+    margin-left:40px;
+    margin-right: 20px;
+}
+
+ul{
+    margin-top: 20px;
+}
+ul li{
+    margin-top: 20px;
+    background-color: darkgray;
+    list-style: none;
+    
+}
