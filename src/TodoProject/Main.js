@@ -17,7 +17,7 @@ import  './Main.css';
 
     addTodotoState = (text) => {
        const newTodos = this.state.Todos.concat({
-            text
+            text:text
         });
 
         this.setState({
@@ -33,7 +33,7 @@ import  './Main.css';
                      return   <li key={index}>{Todos.text}</li>;
                    })}
                </ul>
-               <AddTodo addTodotoState={this.addTodotoState}/>
+               <AddTodo addTodotoState={(text) => this.addTodotoState(text)}/>
           </div>
         );
     }

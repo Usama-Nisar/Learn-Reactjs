@@ -3,12 +3,13 @@ import CounterReducer from './CounterReducer';
 
 const Child2 = () => {
 
-     let [state, dispatch] = useReducer(CounterReducer, 10) //deStructuring
-     console.log(state)
+     let [count, dispatch] = useReducer(CounterReducer, 0) //deStructuring
+     console.log(count)
     return(
         <div>
-         <h1>State value is {state}</h1>   
-         <button onClick={ () => {dispatch('INCREMENT')} }>Increament</button>
+         <h2>Count value is {count}</h2>   
+         <button onClick={ () => {dispatch({type : 'Increament'})} }>Increament</button>
+         <button onClick={ () => {dispatch({type : 'Decreament'})} }>Decreament</button>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, {useState}  from 'react';
 import axios from 'axios'
-import {useHistory}  from 'react-router-dom'
+import {useHistory}  from 'C:/Users/AGA/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react-router-dom'
 
 
 

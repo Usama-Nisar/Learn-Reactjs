@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-//import Todo from './TodoBasic/Todo';
-//import State from './Practice/state';
 import * as serviceWorker from './serviceWorker';
- import { BrowserRouter } from 'react-router-dom';
-// import App1 from './Context_API/App1';
- import App2 from './Context_API_2/App2'
-// import App from './App'
-// import UseState from './Hook/UseState';
+import Main from './ReduxBasic/Main'
+import {createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk';
+import {Provider} from 'react-redux'
+import reducer from './ReduxBasic/Reducer/Reducer';
+
+
+
+
 
 
 // let currDate = new Date(2020, 11, 20, 14);
@@ -28,10 +29,12 @@ import * as serviceWorker from './serviceWorker';
 //   cssStyle.color = "Black";
 // }
 
+let store = createStore(reducer, applyMiddleware(thunk))
+
 ReactDOM.render(
-  // <BrowserRouter>
-        <App2 />
-  // </BrowserRouter>
+  <Provider  store={store} >
+    <Main/>
+  </Provider>
   ,
   document.getElementById('root')
 );

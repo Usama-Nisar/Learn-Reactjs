@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-import {Link,useParams} from 'react-router-dom'
+import {Link,useParams} from 'C:/Users/AGA/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react-router-dom'
 
 
 const ViewUser = () => {
